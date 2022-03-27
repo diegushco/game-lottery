@@ -1,0 +1,25 @@
+@import "./../../theme/core.scss";
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $body-gray;
+
+  div {
+    width: 100%;
+    flex: 1;
+    display: flex;
+
+    div {
+      margin: 0.5rem;
+    }
+
+    div:first-of-type {
+      flex-basis: 70%;
+    }
+    div:last-child {
+      flex-basis: 30%;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import './../../theme/core.scss';
+
+:host{
+    width: 100%;
+}
+
+article{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+
+    div{
+        padding: 0rem 1rem;
+        width: 100%;
+    }
+
+    div{
+        text-align: center;
+        a{
+            color: $btn-primary;
+            cursor: pointer;
+    
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .message-bottom{
+        margin-top: 1rem;
+    }
+}

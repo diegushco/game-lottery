@@ -1,0 +1,54 @@
+{
+  "coin": "€",
+  "gameBalls": [
+    {
+      "num": 1,
+      "color": "#d55353"
+    },
+    {
+      "num": 2,
+      "color": "#fef7e2"
+    },
+    {
+      "num": 3,
+      "color": "#48a76b"
+    },
+    {
+      "num": 4,
+      "color": "#ffe8ec"
+    },
+    {
+      "num": 5,
+      "color": "#f8cb2f"
+    },
+    {
+      "num": 6,
+      "color": "#ebf6ee"
+    },
+    {
+      "num": 7,
+      "color": "#d55353"
+    },
+    {
+      "num": 8,
+      "color": "#fef7e2"
+    },
+    {
+      "num": 9,
+      "color": "#48a76b"
+    },
+    {
+      "num": 10,
+      "color": "#ffe8ec"
+    }
+  ],
+  "defaultBall": [
+    {
+      "num": "",
+      "color": "#e3e3ed"
+    }
+  ],
+  "qtySelectedGamer": 8,
+  "secondsBetweenBet": 3,
+  "msgZeroBet":"You must choose at least one ball and bet money"
+}

@@ -1,0 +1,16 @@
+<article>
+  <div>
+    <gr-ball size="small" [quantity]="selection"></gr-ball>
+
+    <gr-bet-slip (ok)="btnOk()"></gr-bet-slip>
+  </div>
+  <div class="betting-action">
+    <ng-container *ngIf="money$ | async as money; else zero">
+      <label *ngIf="getQty$ | async  as qty; else zero">Total: {{ qty * money }} {{ CONF.coin }} </label>
+    </ng-container>
+    <ng-template #zero>
+      <label>Total: 0 {{ CONF.coin }}</label>
+    </ng-template>
+    <gr-btn (click)="placeBetAction()" [block]="true">Place bet</gr-btn>
+  </div>
+</article>

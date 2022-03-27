@@ -1,0 +1,11 @@
+<div class="balls">
+  <span
+    [style.width.rem]="size === 'big' ? 2.5 : 2"
+    [style.height.rem]="size === 'big' ? 2.5 : 2"
+    (click)="selectBall(ball)"
+    *ngFor="let ball of quantity"
+    [style.background-color]="ball.color"
+  >
+    {{ ball.num }}
+  </span>
+</div>

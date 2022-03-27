@@ -1,0 +1,11 @@
+<article>
+    <span>
+        <span>
+            {{getQty$ | async}}x
+         </span>
+         <input [formControl]="money" class="form-input" type="text">
+    </span>
+    <span>
+        <gr-btn (click)="setMoney()">Ok</gr-btn>
+    </span>
+</article>

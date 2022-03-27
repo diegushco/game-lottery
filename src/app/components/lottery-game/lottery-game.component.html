@@ -1,0 +1,38 @@
+<main>
+  <div>
+    <div>
+      <gr-main-box
+        (clear)="clearSelection($event)"
+        (ballSelected)="ballSelected($event)"
+        [clickeable]="ballsClickeable"
+        [balls]="CONF.gameBalls"
+        titlebox="Numbers"
+      ></gr-main-box>
+    </div>
+    <div>
+      <gr-aside
+        (placeBet)="placeBet()"
+        (ok)="message = ''"
+        [selection]="arrBallsToShow"
+      ></gr-aside>
+    </div>
+  </div>
+  <div>
+    <div>
+      <gr-main-box
+        [balls]="wonBall"
+        titlebox="Result"
+        alignt="center"
+        [msg]="message"
+      ></gr-main-box>
+    </div>
+
+    <div>
+      <gr-aside
+        [selection]="ballsComeOut$ | async"
+        (placeBet)="placeBet()"
+        (ok)="message = ''"
+      ></gr-aside>
+    </div>
+  </div>
+</main>

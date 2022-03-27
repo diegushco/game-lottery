@@ -1,0 +1,19 @@
+<article>
+    <div>
+        <h5 *ngIf="msg !== ''">{{msg}}</h5>
+        <h4 [style.text-align]="alignt">{{titlebox}}</h4>
+
+    </div>
+    <div>
+        <gr-ball (sendBall)="selectBall($event)" [clickeable]="clickeable" [quantity]="balls"></gr-ball>
+        
+    </div>
+    <div class="message-bottom">
+        <div *ngIf="balls?.length > 1;else message">
+            <a (click)="clearSelection()">Clear Selection</a>
+        </div>
+        <ng-template #message>
+            {{msgEnd$ | async}}
+        </ng-template>
+    </div>
+</article>

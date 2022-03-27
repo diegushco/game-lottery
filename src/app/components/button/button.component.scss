@@ -1,0 +1,18 @@
+@import "../../theme/core.scss";
+
+button{
+    background-color: $btn-primary;
+    cursor: pointer;
+    color: white;
+    border: none;
+    height: 2.5rem;
+    padding: 0 1rem;
+
+    &:hover{
+        background-color: rgba($btn-primary, 0.8);
+    }
+
+    &:active{
+        background-color: $btn-primary;
+    }
+}

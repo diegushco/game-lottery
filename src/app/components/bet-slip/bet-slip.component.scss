@@ -1,0 +1,23 @@
+@import './../../theme/core.scss';
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+    span:first-of-type{
+        background-color: $gray-default;
+        padding: 0.2rem 0.3rem;
+        width: 30%;
+    }
+
+    span > input{
+        height: 2rem;
+        width: 3.5rem;
+    }
+
+    span:last-of-type{
+        padding: 0 .2rem;
+    }
+}
